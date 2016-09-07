@@ -29,6 +29,8 @@ Partial Class frmMain
         Me.chkFiveYearsEmployed = New System.Windows.Forms.CheckBox()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
         Me.lblAnswer = New System.Windows.Forms.Label()
+        Me.btnCalc = New System.Windows.Forms.Button()
+        Me.btnExit = New System.Windows.Forms.Button()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox1.SuspendLayout()
         Me.SuspendLayout()
@@ -88,13 +90,34 @@ Partial Class frmMain
         Me.lblAnswer.Name = "lblAnswer"
         Me.lblAnswer.Size = New System.Drawing.Size(200, 67)
         Me.lblAnswer.TabIndex = 5
-        Me.lblAnswer.Text = "Label2"
+        Me.lblAnswer.Text = " "
+        Me.lblAnswer.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'btnCalc
+        '
+        Me.btnCalc.Location = New System.Drawing.Point(12, 240)
+        Me.btnCalc.Name = "btnCalc"
+        Me.btnCalc.Size = New System.Drawing.Size(92, 44)
+        Me.btnCalc.TabIndex = 6
+        Me.btnCalc.Text = "&Calculate"
+        Me.btnCalc.UseVisualStyleBackColor = True
+        '
+        'btnExit
+        '
+        Me.btnExit.Location = New System.Drawing.Point(120, 240)
+        Me.btnExit.Name = "btnExit"
+        Me.btnExit.Size = New System.Drawing.Size(92, 44)
+        Me.btnExit.TabIndex = 7
+        Me.btnExit.Text = "E&xit"
+        Me.btnExit.UseVisualStyleBackColor = True
         '
         'frmMain
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(224, 247)
+        Me.ClientSize = New System.Drawing.Size(224, 296)
+        Me.Controls.Add(Me.btnExit)
+        Me.Controls.Add(Me.btnCalc)
         Me.Controls.Add(Me.lblAnswer)
         Me.Controls.Add(Me.GroupBox1)
         Me.Controls.Add(Me.PictureBox1)
@@ -114,4 +137,6 @@ Partial Class frmMain
     Friend WithEvents chkFiveYearsEmployed As CheckBox
     Friend WithEvents GroupBox1 As GroupBox
     Friend WithEvents lblAnswer As Label
+    Friend WithEvents btnCalc As Button
+    Friend WithEvents btnExit As Button
 End Class
