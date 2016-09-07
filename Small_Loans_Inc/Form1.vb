@@ -1,4 +1,6 @@
 ﻿' Joshua Pickenpaugh
+' September 7th, 2016
+' "Small Loans" excersise. 
 
 Public Class frmMain
     Private Sub btnExit_Click(sender As Object, e As EventArgs) Handles btnExit.Click
