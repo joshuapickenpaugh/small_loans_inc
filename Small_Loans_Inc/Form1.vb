@@ -1,4 +1,6 @@
-﻿Public Class frmMain
+﻿' Joshua Pickenpaugh
+
+Public Class frmMain
     Private Sub btnExit_Click(sender As Object, e As EventArgs) Handles btnExit.Click
 
         'Closes the app:
